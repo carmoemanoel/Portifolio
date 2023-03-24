@@ -39,7 +39,7 @@ body{
 }
 
 .card-navegacao{
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +48,64 @@ body{
     background: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-navegacao > ul > a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.card-navegacao > ul > a {
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    padding: 35px;
+    color:#77ffc0;
+    font-size: 30px;
+}
+
+.projetos{
+    background: #534d63;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.sobre{
+    background: #534d63;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.contato{
+    background: #534d63;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.projetos:hover{
+    background: #848499;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.sobre:hover{
+    background: #848499;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.contato:hover{
+    background: #848499;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 40px;
 }
