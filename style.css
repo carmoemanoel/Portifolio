@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
 .main-login{
     width: 100vw;
     height: 100vh;
@@ -110,10 +114,23 @@ li{
     margin-right: 40px;
 }
 
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .navegacao{
+        width: 100%;
+        height: auto;
+    }
+    .left-img{
+        width: 50vh;
+    }
 
-
-
-
-
-
-
+}
