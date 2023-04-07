@@ -1,9 +1,11 @@
-body{
-    margin: 0;
-}
 
-body * {
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;1,100 & display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
 }
 
 .main-login{
@@ -43,7 +45,7 @@ body * {
 }
 
 .card-navegacao{
-    width: 40%;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,65 +56,30 @@ body * {
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-navegacao > ul > a {
-    text-decoration: none;
-    list-style: none;
+.btn-navegacao{
+    width:20vw;
+    height:10vh;
+    background: #3f3558;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-navegacao > ul > a {
-    text-decoration: none;
-    list-style: none;
+.card-navegacao > button {
+    color: #77ffc0;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-li{
-    padding: 35px;
-    color:#77ffc0;
-    font-size: 30px;
+.btn-navegacao:hover{
+   background: #3a3052;
 }
 
-.projetos{
-    background: #534d63;
-    border-radius: 15px;
-    text-align: center;
-    margin-right: 40px;
-}
-
-.sobre{
-    background: #534d63;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 40px;
-}
-
-.contato{
-    background: #534d63;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 40px;
-}
-
-.projetos:hover{
-    background: #848499;
-    border-radius: 15px;
-    text-align: center;
-    margin-right: 40px;
-}
-
-.sobre:hover{
-    background: #848499;
-    border-radius: 15px;
-    text-align: center;
-    margin-right: 40px;
-}
-
-.contato:hover{
-    background: #848499;
-    border-radius: 15px;
-    text-align: center;
-    margin-right: 40px;
-}
 
 @media only screen and (max-width: 600px){
     .main-login{
@@ -133,4 +100,15 @@ li{
         width: 50vh;
     }
 
+    .card-navegacao{
+        width: 90%;
+        height: auto;
+    }
+
+    .card-navegacao > button{
+        width: 100%;
+        height: 20vw;
+    }
+
 }
+
