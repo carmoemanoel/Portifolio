@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;1,100 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #201b2c;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #77ffc0;
+}
+
+
+main.cards{
+    display: flex;
+    padding: 32px;
+
+}
+
+main.cards section.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #2f2841;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+main.cards section.cards:first-child{
+    margin-left: 0;
+}
+
+main.cards section.cards .icon{
+    width: 100px;
+    height: 100px;
+}
+
+main.cards section.cards img{
+    width: 100%;
+}
+
+main.cards section.cards h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.cards span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.cards button{
+    background:#3f3558;
+    color: #77ffc0;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+main.cards section.cards button:hover{
+    background: #3a3052;
+}
+
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.cards{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.cards:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
